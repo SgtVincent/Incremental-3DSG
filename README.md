@@ -1,5 +1,5 @@
-# asldoc-2021-st-juntingchen
-## Incremental 3D Scene Graph Construction
+
+# Incremental 3D Scene Graph Construction
 This system constructs a hierarchical 3D scene graph from dense mapping for high-level planning incrementally in real time. ![figure](images/demo_scene_graph_construction.gif).
 ## Environment Setup
 ### Prerequisite
