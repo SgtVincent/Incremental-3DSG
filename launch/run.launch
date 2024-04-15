@@ -1,0 +1,22 @@
+<launch>
+<!-- ============ Arguments ============ -->
+  <arg name="use_scene_graph_predict_node" default="true"/>
+  <arg name="use_room_predict_node_node" default="true"/>
+  <arg name="use_room_seg_node" default="true"/>
+  <arg name="label_file" default="/home/junting/Downloads/dataset/flat/labels_with_nyu40.csv"/>
+
+<!-- ============ Run ============ -->
+  <node name="scene_graph_predict_node" pkg="scene_graph" type="scene_graph_predict_node.py" output="screen"
+    if="$(arg use_scene_graph_predict_node)">
+  </node>
+  
+  <node name="room_predict_node_node" pkg="scene_graph" type="room_predict_node.py" output="screen"
+    if="$(arg use_room_predict_node_node)">
+    <param name="label_file" value="$(arg label_file)"/>
+  </node>
+
+  <node name="room_seg_node" pkg="scene_graph" type="room_seg_node.py" output="screen"
+    if="$(arg use_room_seg_node)">
+  </node>
+
+</launch>

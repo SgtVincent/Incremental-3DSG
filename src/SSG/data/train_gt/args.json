@@ -1,0 +1,18 @@
+{
+  "scans": "/media/junting/Elements/3RScan/3RScan/",
+  "type": "train",
+  "pth_out": "../data/train_gt",
+  "relation": "relationships",
+  "target_scan": "",
+  "label_type": "3RScan160",
+  "mapping": 1,
+  "v2": 1,
+  "verbose": false,
+  "debug": 0,
+  "search_method": "BBOX",
+  "radius_receptive": 0.5,
+  "split": 0,
+  "radius_seed": 1,
+  "min_segs": 5,
+  "split_method": "BBOX"
+}
